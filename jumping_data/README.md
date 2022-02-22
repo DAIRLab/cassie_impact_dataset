@@ -6,7 +6,7 @@ The trajectories include the floating base state (estimated using the contact-ai
 The jumping controller is the impact invariant controller https://github.com/DAIRLab/dairlib/tree/master/examples/impact_invariant_control.
 While the overall control architecture is the same across logs, gains were changed across the experiments.
 
-The trajectories are stored in raw `.npy` files and can be loaded in as shown in the example script .
+The trajectories are stored in raw `.npy` files and can be loaded in as shown in the example script: `plot_state_trajectory.py`
 
 The state indices are defined below, the description of the joint dofs are defined in the file `cassie_v2.urdf`.
 The joint ordering is defined using the Drake (pre-Nov 16 2021) breadth-first convention when loading in the urdf.

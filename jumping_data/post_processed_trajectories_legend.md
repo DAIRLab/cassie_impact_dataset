@@ -9,7 +9,7 @@ This is to ensure that contact occurs at the same time in the simulators as it d
 The correspondence between the processed data and the raw experimental logs is included below:
 
 |Trajectory | Raw Log File| Impact Start in Raw Log File (s) | Pelvis Vertical Offset (m)|
-|---        |---          | ---                              |---                        |
+|---|---|---|---|
 |00| 01_27_21/lcmlog-08| 30.648| -0.005 |
 |01| 01_27_21/lcmlog-09| 30.646| -0.002 |
 |02| 01_27_21/lcmlog-10| 30.639| -0.005 |
