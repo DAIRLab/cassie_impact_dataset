@@ -1,7 +1,7 @@
 from cassie_hardware_trajectory import *
 
 def main():
-    dataset_num = '08'
+    dataset_num = '00'
     hardware_traj = CassieHardwareTraj(dataset_num)
 
     # Simple plotting options

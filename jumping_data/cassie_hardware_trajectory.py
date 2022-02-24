@@ -17,7 +17,7 @@ CASSIE_NV = 22
 CASSIE_NU = 10
 
 CASSIE_DTS = 100  # 2000Hz * 0.05s
-DATASET_DIR = ''
+DATASET_DIR = 'data/'
 
 class CassieHardwareTraj():
 
@@ -33,8 +33,8 @@ class CassieHardwareTraj():
         self.t = np.load(DATASET_DIR + 't_' + dataset_num + '.npy')
         self.x_samples = np.load(DATASET_DIR + 'x_' + dataset_num + '.npy')
         self.u_samples = np.load(DATASET_DIR + 'u_' + dataset_num + '.npy')
-        self.x_legend = pickle.load(open('state_legend', "rb"))
-        self.u_legend = pickle.load(open('actuator_legend', "rb"))
+        self.x_legend = pickle.load(open(DATASET_DIR + 'state_legend', "rb"))
+        self.u_legend = pickle.load(open(DATASET_DIR + 'actuator_legend', "rb"))
 
     def time_to_index(self, t):
         if int(t * 2000) >= self.u_samples.shape[0]:
